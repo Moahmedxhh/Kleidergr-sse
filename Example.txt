@@ -1,5 +1,99 @@
-============================
-Example.txt
-============================
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kleidergrößen erfassen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .note {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
 
-You can edit a basic document file in iEditor.
+  <h1>Kleidergrößen erfassen</h1>
+
+  <form>
+    <label for="name">Name:</label>
+    <select id="name" name="name" required>
+      <option disabled selected>Bitte auswählen</option>
+      <option>Mohamed A.</option>
+      <option>Abdu.</option>
+      <option>Ahmed.</option>
+      <option>Dhoobeey.</option>
+      <option>Aways.</option>
+      <option>Awga</option>
+      <option>Shakiib.</option>
+      <option>Farah.</option>
+      <option>Khadar</option>
+      <option>Maslah.</option>
+      <option>Mohamed Gr.</option>
+      <option>Najah.</option>
+      <option>Oth.</option>
+      <option>Saleeban</option>
+      <option>Salmaan.</option>
+      <option>Shekal.</option>
+      <option>Tores.</option>
+      <option>Wazir.</option>
+      <option>Yusuf.</option>
+      <option>Abdullahi.</option>
+      <option>Ibrahim</option>
+      <option>Abdiqani</option>
+      <option>Cadnaan</option>
+      <option>Zakariye</option>
+      <option>Abdulmajid</option>
+      <option>Abdulwahab</option>
+      <option>Abdihamid</option>
+      <option>Jeremy</option>
+      <option>Junior</option>
+    </select>
+
+    <label for="size">Kleidergröße:</label>
+    <select id="size" name="size" required>
+      <option disabled selected>Bitte auswählen</option>
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+      <option>XXL</option>
+    </select>
+
+    <button type="submit">Absenden</button>
+  </form>
+
+  <div class="note">
+    Hinweis: Die Daten werden nicht gespeichert. Dies ist nur ein Beispiel-Formular.
+  </div>
+
+</body>
+</html>
